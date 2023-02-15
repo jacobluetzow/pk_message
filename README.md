@@ -25,20 +25,20 @@ mix phx.server
 ```
 
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000/api`](http://localhost:4000/api) from your browser.
 
 
 
 To send message
-[`localhost:4000/api/receive_message/:queue/:message`](http://localhost:4000/api/receive-message/queue1/This%20is%20a%20%20message!)
+[`localhost:4000/api/receive_message/:queue/:message`](http://localhost:4000/api/receive-message/queue1/This%20is%20a%20message!)
 
 #### Example
 ```
-curl http://localhost:4000/api/receive-message/queue1/This%20is%20a%20%20message!
+curl http://localhost:4000/api/receive-message/queue1/This%20is%20a%20message!
 ```
 Output
 ```
-Queue: queue1, Message: This is a  message!
+Queue: queue1, Message: This is a message!
 ```
 
 
