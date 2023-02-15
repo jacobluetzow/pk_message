@@ -1,6 +1,6 @@
 # Pk Message
 
-## About:
+## About
 This application "processes" messages received in order by printing message text to the terminal. Each queue that receives a message will "process" one message a second, no matter how quickly the message are submitted to the `GET /receive_message/:queue/:message`. Messages received on different queues will "process" simultaneously, and any following messages in those queues will then be "processed" every second.
 
 When this project's running, it will also start a GenServer process called ProcessingServer to keep the message queue state, executing code asynchronously. 
