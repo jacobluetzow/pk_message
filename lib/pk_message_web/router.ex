@@ -19,5 +19,4 @@ defmodule PkMessageWeb.Router do
     get "/", WelcomeController, :index
     get "/receive-message/:queue/:message", MessageController, :receive_message
   end
-
 end
